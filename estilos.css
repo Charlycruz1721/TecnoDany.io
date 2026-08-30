@@ -1,13 +1,10 @@
-/* --- CONFIGURACIÓN BASE --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.logo-izquierda{
-
-    
-    background-color: #eaebd0; /* Simula color de mapa sutil */
+.logo-izquierda {
+    background-color: #eaebd0;
     border: 2px dashed #cbd5e1;
     border-radius: 8px;
     min-height: 250px;
@@ -16,38 +13,31 @@
     justify-content: center;
     align-items: center;
     color: #64748b;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
-
-.logo-izquierda { font-size: 40px; margin-bottom: 10px; }
 .precio {
     font-size: 28px;
     font-weight: 700;
-    color: #0f172a; /* Un tono casi negro muy elegante */
+    color: #0f172a;
     margin-bottom: 15px;
-    margin-top: -5px; /* Lo pega un poco más a la velocidad para que se vea agrupado */
+    margin-top: -5px;
 }
-
 .precio span {
     font-size: 14px;
     font-weight: normal;
-    color: #64748b; /* Gris suave para el "/ mes" */
+    color: #64748b;
 }
-
-/* Ajuste para que el texto resaltado del plan más vendido no opaque el precio */
 .tarjeta-plan.destacado .precio {
-    color: #1e3a8a; /* Resalta el precio en azul en la tarjeta dorada */
+    color: #1e3a8a;
 }   
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f6f9;
     color: #333333;
     line-height: 1.6;
-    /* Al hacer la barra 'fixed', se sale del documento. Esto compensa ese espacio */
     padding-top: 72px; 
 }
-
-/* --- CLASES DE UTILIDAD (Estilo Humano) --- */
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 .container-sm { max-width: 750px; margin: 0 auto; padding: 0 20px; }
 .section { padding: 60px 0; }
@@ -61,29 +51,22 @@ body {
 .mt-1 { margin-top: 15px; }
 .mt-2 { margin-top: 30px; }
 .subtitle { color: #666; margin-top: 5px; }
-
-/* Grids sencillos rápidos */
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-
-/* --- BARRA DE NAVEGACIÓN --- */
 .navbar {
     background-color: #1e3a8a;
-    position: fixed; /* Cambiamos sticky por fixed para que "flote" siempre */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Asegura que cubra de lado a lado */
+    width: 100%;
     z-index: 999;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease-in-out; /* Esto hace que el "pum" sea fluido */
+    transition: transform 0.3s ease-in-out;
 }
-
-/* Esta es la clase que el código insertará para esconder la barra */
 .navbar-oculta {
     transform: translateY(-100%);
 }
-
 .nav-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -92,20 +75,17 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .navbar .logo {
     color: #ffffff;
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
 }
-
 .nav-menu {
     display: flex;
     list-style: none;
     align-items: center;
 }
-
 .nav-menu li a {
     color: #ffffff;
     text-decoration: none;
@@ -113,18 +93,14 @@ body {
     font-weight: 500;
     transition: 0.2s;
 }
-
 .nav-menu li a:hover {
     color: #f59e0b;
 }
-
 .nav-menu li .btn-legal {
     background-color: #1d4ed8;
     border-radius: 4px;
     font-size: 13px;
 }
-
-
 .danu {
     background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80');
     background-size: cover;
@@ -133,19 +109,16 @@ body {
     padding: 90px 20px;
     text-align: center;
 }
-
 .danu-content h1 {
     font-size: 38px;
     margin-bottom: 15px;
 }
-
 .danu-content p {
     font-size: 18px;
     max-width: 700px;
     margin: 0 auto 30px auto;
     color: #cbd5e1;
 }
-
 .btn-main {
     background-color: #f59e0b;
     color: #111827;
@@ -156,12 +129,9 @@ body {
     display: inline-block;
     transition: 0.2s;
 }
-
 .btn-main:hover {
     background-color: #d97706;
 }
-
-/* --- PLANES (TARJETAS) --- */
 .planes-container {
     display: flex;
     justify-content: center;
@@ -169,7 +139,6 @@ body {
     margin-top: 40px;
     flex-wrap: wrap;
 }
-
 .tarjeta-plan {
     background: #ffffff;
     border: 1px solid #e5e7eb;
@@ -181,14 +150,11 @@ body {
     position: relative;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
-
-/* Estilo para resaltar el paquete familiar */
 .tarjeta-plan.destacado {
     border: 2px solid #f59e0b;
     transform: scale(1.03);
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
 }
-
 .tarjeta-plan .pop {
     position: absolute;
     top: -12px;
@@ -201,45 +167,38 @@ body {
     border-radius: 20px;
     text-transform: uppercase;
 }
-
 .tarjeta-plan h3 {
     font-size: 20px;
     color: #111827;
 }
-
 .velocidad {
     font-size: 36px;
     font-weight: 800;
     color: #1e3a8a;
     margin: 15px 0;
 }
-
 .velocidad span {
     font-size: 16px;
     font-weight: normal;
     color: #666;
 }
-
 .desc {
     font-size: 14px;
     color: #6b7280;
     margin-bottom: 20px;
     min-height: 44px;
 }
-
 .features {
     list-style: none;
     margin-bottom: 30px;
     font-size: 14px;
 }
-
 .features li {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
 .btn-card {
     background-color: #1e3a8a;
     color: #ffffff;
@@ -251,33 +210,26 @@ body {
     margin-top: auto;
     transition: 0.2s;
 }
-
 .btn-card:hover { background-color: #111827; }
 .btn-card.btn-destacado { background-color: #f59e0b; color: #111827; }
 .btn-card.btn-destacado:hover { background-color: #d97706; }
-
-/* --- COBERTURA Y MAPA --- */
 .lista-cobertura {
     margin-top: 25px;
 }
-
 .item-cob {
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
 }
-
 .item-cob i {
     color: #f59e0b;
     font-size: 20px;
     margin-top: 4px;
 }
-
 .item-cob h4 { color: #111827; }
 .item-cob p { font-size: 14px; color: #6b7280; }
-
 .mapa-caja {
-    background-color: #eaebd0; /* Simula color de mapa sutil */
+    background-color: #eaebd0;
     border: 2px dashed #cbd5e1;
     border-radius: 8px;
     min-height: 250px;
@@ -287,12 +239,8 @@ body {
     align-items: center;
     color: #64748b;
 }
-
 .mapa-caja i { font-size: 40px; margin-bottom: 10px; }
-
-/* --- FORMULARIO DE REPORTES --- */
 .section-reportes .subtitle { color: #94a3b8; }
-
 .form-reporte {
     background-color: #1f2937;
     padding: 30px;
@@ -303,20 +251,16 @@ body {
     gap: 20px;
     border: 1px solid #374151;
 }
-
 .input-group {
     display: flex;
     flex-direction: column;
 }
-
 .input-group.full { grid-column: span 2; }
-
 .form-reporte label {
     font-size: 13px;
     color: #cbd5e1;
     margin-bottom: 5px;
 }
-
 .form-reporte input, 
 .form-reporte text-area,
 .form-reporte textarea {
@@ -328,12 +272,10 @@ body {
     font-size: 14px;
     outline: none;
 }
-
 .form-reporte input:focus, 
 .form-reporte textarea:focus {
     border-color: #f59e0b;
 }
-
 .btn-alert {
     background-color: #dc2626;
     color: white;
@@ -344,25 +286,18 @@ body {
     cursor: pointer;
     transition: 0.2s;
 }
-
 .btn-alert:hover { background-color: #b91c1c; }
-
-/* --- CONTACTO --- */
 .caja-contacto {
-    background: #white;
     background-color: white;
     padding: 25px;
     border-radius: 8px;
     border: 1px solid #e5e7eb;
 }
-
 .caja-contacto i { font-size: 28px; margin-bottom: 10px; }
 .caja-contacto .icon-blue { color: #1e3a8a; }
 .caja-contacto .icon-green { color: #22c55e; }
 .caja-contacto a { color: #22c55e; font-weight: bold; text-decoration: none; }
 .caja-contacto a:hover { text-decoration: underline; }
-
-/* --- SECCIÓN LEGAL (IFT) --- */
 .seccion-legal {
     background-color: #e2e8f0;
     padding: 40px 0;
@@ -370,17 +305,14 @@ body {
     color: #475569;
     border-top: 1px solid #cbd5e1;
 }
-
 .title-legal {
     font-size: 14px;
     color: #1e293b;
     text-transform: uppercase;
     margin-bottom: 8px;
 }
-
 .intro-legal { margin-bottom: 20px; }
 .legal-info p { margin-bottom: 12px; line-height: 1.5; }
-
 .link-rpc-box {
     background-color: #ffffff;
     padding: 15px;
@@ -391,7 +323,6 @@ body {
     align-items: center;
     gap: 15px;
 }
-
 .link-rpc-box strong { color: #1e293b; font-size: 13px; }
 .btn-link-rpc {
     background-color: #1e3a8a;
@@ -402,7 +333,6 @@ body {
     font-weight: bold;
     white-space: nowrap;
 }
-
 footer {
     background-color: #0f172a;
     color: #94a3b8;
@@ -411,12 +341,10 @@ footer {
     font-size: 12px;
 }
 @media (max-width: 768px) {
-    /* 1. Apilamos el logo y el menú */
     .nav-container { 
         flex-direction: column; 
         gap: 15px; 
     }
-    
     .nav-menu { 
         display: flex; 
         flex-wrap: wrap; 
@@ -424,17 +352,14 @@ footer {
         gap: 10px; 
         width: 100%;
     }
-
     .nav-menu li a {
         padding: 5px 10px;
         font-size: 14px;
     }
-
     .nav-menu li:last-child {
         flex-basis: 50%; 
         margin-top: 5px;
     }
-
     .nav-menu li .btn-legal {
         display: block;
         text-align: center;
@@ -443,8 +368,6 @@ footer {
         font-weight: bold;
         box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
-
-    /* --- Conserva el resto de tus reglas móviles aquí abajo --- */
     .grid-2, .grid-3 { grid-template-columns: 1fr; gap: 20px; }
     .planes-container { flex-direction: column; align-items: center; }
     .tarjeta-plan.destacado { transform: scale(1); }
