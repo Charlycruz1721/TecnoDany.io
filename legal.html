@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Centro Legal y Regulatorio de TECNO DANY. Consulta los contratos de adhesión, formatos simplificados y códigos de prácticas aprobados por IFT y PROFECO.">
     <title>Centro Legal y Regulatorio - TecnoDany</title>
-    
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -15,16 +12,16 @@
         .header-legal h1 { margin-bottom: 10px; font-size: 2.2rem; }
         .header-legal p { font-size: 1.1rem; opacity: 0.9; }
         .seccion-legal { background: #fff; margin: 30px auto; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); max-width: 1000px; }
-        .seccion-legal h2 { color: #1a2b4c; border-bottom: 2px solid #084298; padding-bottom: 10px; margin-bottom: 20px; font-size: 1.5rem; }
+        .seccion-legal h2 { color: #1a2b4c; border-bottom: 2px solid #0d6efd; padding-bottom: 10px; margin-bottom: 20px; font-size: 1.5rem; }
         
         .grid-docs, .grid-enlaces, .grid-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
         
         .btn-doc, .btn-enlace { display: flex; align-items: center; justify-content: flex-start; gap: 15px; background: #f8f9fa; color: #333; padding: 15px; text-decoration: none; border-radius: 6px; border: 1px solid #dee2e6; transition: 0.3s; font-weight: bold; font-size: 0.9rem; }
         .btn-doc i { font-size: 1.5rem; color: #dc3545; }
-        .btn-enlace i { font-size: 1.5rem; color: #084298; }
+        .btn-enlace i { font-size: 1.5rem; color: #0d6efd; }
         .btn-doc:hover, .btn-enlace:hover { background: #e9ecef; border-color: #ced4da; transform: translateY(-2px); }
         
-        .box-info { background: #f8f9fa; padding: 20px; border-radius: 6px; border-left: 4px solid #084298; }
+        .box-info { background: #f8f9fa; padding: 20px; border-radius: 6px; border-left: 4px solid #0d6efd; }
         .box-info h3 { margin-bottom: 10px; color: #333; font-size: 1.1rem; }
         .box-info p, .box-info ul { font-size: 0.9rem; color: #555; line-height: 1.5; margin-bottom: 10px; }
         
@@ -34,101 +31,100 @@
 </head>
 <body>
 
-    <nav class="navbar">
+       <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <img src="logo.png" width="50" height="50" alt="Logotipo TecnoDany"> TecnoDany
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html#planes">Planes</a></li>
-                <li><a href="index.html#cobertura">Cobertura</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
-                <li><a href="index.html#contratar">Contratar</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#cobertura">Cobertura</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#contratar">Contratar</a></li>
                 <li><a href="legal.html" class="btn-legal">Legal</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <header class="header-legal">
-            <h1>Centro Legal y Regulatorio</h1>
-            <p>Concesionario: <strong>ALBA LEONILA JOSÉ JUÁREZ</strong> | Nombre Comercial: <strong>TecnoDany</strong></p>
-            <p style="font-size: 0.9rem; margin-top: 10px;">Folio IFT: FET106459CO-527435 | Concesión Única para Uso Comercial</p>
-        </header>
+    <header class="header-legal">
+        <h1>Centro Legal y Regulatorio</h1>
+        <p>Concesionario: <strong>ALBA LEONILA JOSÉ JUÁREZ</strong> | Nombre Comercial: <strong>TecnoDany</strong></p>
+        <p style="font-size: 0.9rem; margin-top: 10px;">Folio IFT: FET106459CO-527435 | Concesión Única para Uso Comercial</p>
+    </header>
 
-        <div class="container">
-            
-            <section class="seccion-legal">
-                <h2><i class="fa-solid fa-file-pdf"></i> Documentos Oficiales Descargables</h2>
-                <div class="grid-docs">
-                    <a href="archivos/titulo_concesion.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Permiso / Título de concesión</a>
-                    <a href="archivos/constancia_ift.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Constancia de Inscripción (IFT)</a>
-                    <a href="archivos/FormatoSimplificado_2829951.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Formato Simplificado (Plan Básico)</a>
-                    <a href="archivos/FormatoSimplificado_2829965.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Formato Simplificado (Plan Familiar)</a>
-                    <a href="archivos/FormatoSimplificado_2829903.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Formato Simplificado (Alto Consumo)</a>
-                    <a href="archivos/registro_profeco.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Registro de Contrato (PROFECO)</a>
-                    <a href="archivos/codigo_practicas.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Código de Prácticas Comerciales</a>
-                    <a href="archivos/aviso_privacidad.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Aviso de Privacidad</a>
-                    <a href="archivos/carta_derechos.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Carta de Derechos Mínimos</a>
-                    <a href="archivos/catalogo_tramites.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Catálogo de Trámites</a>
-                    <a href="archivos/politicas_trafico.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Código de Gestión de Tráfico</a>
-                    <a href="archivos/terminos_condiciones.pdf" target="_blank" class="btn-doc" style="border-left: 4px solid #084298;"><i class="fa-solid fa-file-contract text-primary"></i> Términos y Condiciones de Uso</a>
-                </div>
-            </section>
+    <div class="container">
+        
+        <section class="seccion-legal">
+            <h2><i class="fa-solid fa-file-pdf"></i> Documentos Oficiales Descargables</h2>
+            <div class="grid-docs">
+                <a href="archivos/titulo_concesion.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Permiso / Título de concesión</a>
+                <a href="archivos/constancia_ift.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Constancia de Inscripción (IFT)</a>
 
-            <section class="seccion-legal">
-                <h2><i class="fa-solid fa-landmark"></i> Enlaces Institucionales (IFT y SEGOB)</h2>
-                <div class="grid-enlaces">
-                    <a href="https://tarifas.ift.org.mx/ift_visor/" target="_blank" class="btn-enlace"><i class="fa-solid fa-globe"></i> Visor de Tarifas del IFT</a>
-                    <a href="https://dof.gob.mx/nota_detalle.php?codigo=5587373&fecha=25/02/2020#gsc.tab=0" target="_blank" class="btn-enlace"><i class="fa-solid fa-scale-balanced"></i> Lineamientos de Índices de Calidad</a>
-                    <a href="https://www.dof.gob.mx/nota_detalle.php?codigo=5586224&fecha=12/02/2020#gsc.tab=0" target="_blank" class="btn-enlace"><i class="fa-solid fa-eye"></i> Lineamientos de Información Transparente</a>
-                </div>
-            </section>
+                <a href="archivos/FormatoSimplificado_2829951.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Formato Simplificado (Plan Básico)</a>
+                <a href="archivos/FormatoSimplificado_2829965.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Formato Simplificado (Plan Familiar)</a>
+                <a href="archivos/FormatoSimplificado_2829903.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Formato Simplificado (Alto Consumo)</a>
+                <a href="archivos/registro_profeco.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Registro de Contrato (PROFECO)</a>
+                <a href="archivos/codigo_practicas.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Código de Prácticas Comerciales</a>
+                <a href="archivos/aviso_privacidad.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Aviso de Privacidad</a>
+                <a href="archivos/carta_derechos.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Carta de Derechos Mínimos</a>
+                <a href="archivos/catalogo_tramites.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Catálogo de Trámites</a>
+                <a href="archivos/politicas_trafico.pdf" target="_blank" class="btn-doc"><i class="fa-solid fa-file-pdf"></i> Código de Gestión de Tráfico</a>
+                <a href="archivos/terminos_condiciones.pdf" target="_blank" class="btn-doc" style="border-left: 4px solid #0d6efd;"><i class="fa-solid fa-file-contract text-primary"></i> Términos y Condiciones de Uso</a>
+            </div>
+        </section>
 
-            <section class="seccion-legal">
-                <h2><i class="fa-solid fa-users"></i> Atención a Clientes, Quejas y Seguridad</h2>
-                <div class="grid-info">
-                    <div class="box-info">
-                        <h3><i class="fa-solid fa-file-signature"></i> Procedimiento de Contratación</h3>
-                        <p><strong>Requisitos:</strong> Identificación Oficial vigente y Comprobante de Domicilio no mayor a 3 meses.</p>
-                        <p><strong>Lugares:</strong> Directamente en nuestras oficinas en San Agustín Loxicha o vía WhatsApp.</p>
-                        <p><strong>Horarios de contratación:</strong> Lunes a Viernes de 12:00 a 15:00 y de 16:00 a 17:00 hrs.</p>
-                    </div>
-                    
-                    <div class="box-info">
-                        <h3><i class="fa-solid fa-headset"></i> Canal de Quejas y Soporte</h3>
-                        <p><strong>Domicilio:</strong> Barrio Guadalupe Poste Número 54 (Ubicación: 298P+GR), San Agustín Loxicha, Oax., C.P. 70921</p>
-                        <p><strong>Teléfono:</strong> 951 576 0410</p>
-                        <p><strong>Correo:</strong> soporte@tecnodany.com</p>
-                        <p><strong>Horario de atención:</strong> Lunes a Viernes de 12:00 a 15:00 y de 16:00 a 17:00 hrs.</p>
-                        <p><strong>Tiempo máximo de resolución:</strong> 72 horas hábiles (Sujeto a verificación técnica)</p>
-                    </div>
+        <section class="seccion-legal">
+            <h2><i class="fa-solid fa-landmark"></i> Enlaces Institucionales (IFT y SEGOB)</h2>
+            <div class="grid-enlaces">
+                <a href="https://tarifas.ift.org.mx/ift_visor/" target="_blank" class="btn-enlace"><i class="fa-solid fa-globe"></i> Visor de Tarifas del IFT</a>
+                <a href="https://dof.gob.mx/nota_detalle.php?codigo=5587373&fecha=25/02/2020#gsc.tab=0" target="_blank" class="btn-enlace"><i class="fa-solid fa-scale-balanced"></i> Lineamientos de Índices de Calidad</a>
+                <a href="https://www.dof.gob.mx/nota_detalle.php?codigo=5586224&fecha=12/02/2020#gsc.tab=0" target="_blank" class="btn-enlace"><i class="fa-solid fa-eye"></i> Lineamientos de Información Transparente</a>
+            </div>
+        </section>
 
-                    <div class="box-info" style="border-left-color: #dc3545;">
-                        <h3><i class="fa-solid fa-shield-halved"></i> Seguridad y Justicia</h3>
-                        <p>Área designada exclusivamente para la atención, colaboración y requerimientos de las autoridades competentes en materia de seguridad y procuración de justicia.</p>
-                        <p><strong>Correo exclusivo autoridades:</strong><br><a href="mailto:soporte@tecnodany.com" style="font-weight: bold; color: #dc3545;">soporte@tecnodany.com</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="seccion-legal">
-                <h2><i class="fa-solid fa-router"></i> Equipos Terminales</h2>
+        <section class="seccion-legal">
+            <h2><i class="fa-solid fa-users"></i> Atención a Clientes, Quejas y Seguridad</h2>
+            <div class="grid-info">
                 <div class="box-info">
-                    <p><strong>Características y Funcionalidades:</strong> El servicio incluye la instalación de una antena receptora exterior y un enrutador (Router Wi-Fi) para la distribución de la señal de internet dentro del domicilio.</p>
-                    <p><strong>Precio y Condiciones:</strong> El servicio incluye 1 equipo terminal (Módem). Se aplica un cargo único por provisión de equipo de $650.00.</p>
-                    <p><strong>Garantía:</strong> Los equipos cuentan con una garantía de 90 días por defectos de fábrica aplicable directamente con TecnoDany.</p>
-                    <p><strong>Política de Desbloqueo:</strong> En caso de que el equipo sea adquirido en propiedad por el usuario, este podrá ser desbloqueado al término de su contrato de acuerdo con la normatividad vigente del IFT.</p>
+                    <h3><i class="fa-solid fa-file-signature"></i> Procedimiento de Contratación</h3>
+                    <p><strong>Requisitos:</strong> Identificación Oficial vigente y Comprobante de Domicilio no mayor a 3 meses.</p>
+                    <p><strong>Lugares:</strong> Directamente en nuestras oficinas en San Agustín Loxicha o vía WhatsApp.</p>
+                    <p><strong>Horarios de contratación:</strong> Lunes a Viernes de 12:00 a 15:00 y de 16:00 a 17:00 hrs.</p>
                 </div>
-            </section>
+                
+                <div class="box-info">
+                    <h3><i class="fa-solid fa-headset"></i> Canal de Quejas y Soporte</h3>
+                    <p><strong>Domicilio:</strong> Barrio Guadalupe Poste Número 54 (Ubicación: 298P+GR), San Agustín Loxicha, Oax., C.P. 70921</p>
+                    <p><strong>Teléfono:</strong> 951 576 0410</p>
+                    <p><strong>Correo:</strong> soporte@tecnodany.com</p>
+                    <p><strong>Horario de atención:</strong> Lunes a Viernes de 12:00 a 15:00 y de 16:00 a 17:00 hrs.</p>
+                    <p><strong>Tiempo máximo de resolución:</strong> 72 horas hábiles (Sujeto a verificación técnica)</p>
+                </div>
 
-        </div>
-    </main>
+                <div class="box-info" style="border-left-color: #dc3545;">
+                    <h3><i class="fa-solid fa-shield-halved"></i> Seguridad y Justicia</h3>
+                    <p>Área designada exclusivamente para la atención, colaboración y requerimientos de las autoridades competentes en materia de seguridad y procuración de justicia.</p>
+                    <p><strong>Correo exclusivo autoridades:</strong><br><a href="mailto:soporte@tecnodany.com" style="font-weight: bold; color: #dc3545;">soporte@tecnodany.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-legal">
+            <h2><i class="fa-solid fa-router"></i> Equipos Terminales</h2>
+            <div class="box-info">
+                <p><strong>Características y Funcionalidades:</strong> El servicio incluye la instalación de una antena receptora exterior y un enrutador (Router Wi-Fi) para la distribución de la señal de internet dentro del domicilio.</p>
+                <p><strong>Precio :</strong> Se le aplica un cargo unico de $3500 por concepto de equipo y $ 500 por instalación </p>
+                <p><strong>Garantía:</strong> Los equipos cuentan con una garantía de 90 días por defectos de fábrica aplicable directamente con TecnoDany.</p>
+                <p><strong>Política de Desbloqueo:</strong> Pagando los constos previamente descritos el equipo pasa en propiedad del cliente , este podrá ser reseteado conforme a lo indica el fabricante <a href="https://help.uisp.com/hc/en-us/articles/22590874091927-ISP-Wireless-Reset-Device-to-Factory-Default-Settings">link</a></p>
+            </div>
+        </section>
+
+    </div>
 
     <footer class="site-footer">
         <div class="footer-grid">
             <div>
-                <img src="logo.png" width="60" height="60" alt="TecnoDany" style="margin-bottom:10px;">
+                <img src="logo.png" width="60" alt="TecnoDany" style="margin-bottom:10px;">
                 <p><strong>TecnoDany</strong><br>Servicio de Internet Fijo Inalámbrico.</p>
             </div>
             <div>
@@ -146,6 +142,26 @@
             &copy; 2026 TecnoDany | ALBA LEONILA JOSÉ JUÁREZ. Todos los derechos reservados.
         </div>
     </footer>
+<script>
+     let ultimoScroll = window.scrollY;
+        const navbar = document.querySelector('.navbar');
 
+        window.addEventListener('scroll', () => {
+            let scrollActual = window.scrollY;
+
+            if (scrollActual <= 0) {
+                navbar.classList.remove('navbar-oculta');
+                return;
+            }
+
+            if (scrollActual < ultimoScroll) {
+                navbar.classList.remove('navbar-oculta'); 
+            } else {
+                navbar.classList.add('navbar-oculta');
+            }
+            
+            ultimoScroll = scrollActual;
+        });
+</script>
 </body>
 </html>
