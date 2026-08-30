@@ -6,14 +6,17 @@
     <meta name="description" content="TECNO DANY ofrece servicio de internet fijo inalámbrico, rápido y estable con soporte técnico en San Agustín Loxicha y zonas aledañas.">
     <title>TecnoDany - Servicio de Internet</title>
     
-    <!-- Optimizaciones de Rendimiento -->
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80">
+    <!-- Optimizaciones de Rendimiento Extremo -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://maps.googleapis.com">
     <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
+    
+    <!-- Carga asíncrona de fuentes para no bloquear el texto en móviles -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         .legal-plan { font-size: 0.8rem; color: #666; margin-top: 15px; text-align: left; border-top: 1px solid #eee; padding-top: 10px; line-height: 1.4; }
         .nota-legal { font-size: 0.85rem; color: #555; background-color: #f8f9fa; padding: 12px; border-left: 4px solid #084298; margin-top: 15px; }
@@ -31,8 +34,16 @@
         .footer-link { color: #4da3ff; text-decoration: none; font-weight: bold; }
         .footer-link:hover { text-decoration: underline; }
         .info-contacto p { margin-bottom: 10px; font-size: 1.1rem;}
-        /* Corrección de contraste de accesibilidad */
         .info-contacto a { color: #084298; text-decoration: none; font-weight: bold;}
+        
+        /* HACK DE RENDIMIENTO MÓVIL: Imagen de fondo más pequeña y ligera en celulares */
+        @media (max-width: 768px) {
+            .danu {
+                background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=60') !important;
+                background-size: cover !important;
+                background-position: center !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -52,11 +63,11 @@
         </div>
     </nav>
 
-    <!-- Implementación de la etiqueta MAIN para Accesibilidad -->
     <main>
         <header class="danu">
             <div class="danu-content">
-                <img src="logo.png" width="250" height="250" class="logo-izquierdas" alt="Logotipo TecnoDany">
+                <!-- Fetchpriority high le dice al celular: carga este logo antes que nada -->
+                <img src="logo.png" width="250" height="250" class="logo-izquierdas" alt="Logotipo TecnoDany" fetchpriority="high">
                 <h1>Servicio de Internet Residencial</h1>
                 <p>Conexión estable y soporte técnico para tu hogar o negocio.</p>
                 <a href="#planes" class="btn-main">Ver paquetes</a>
@@ -124,7 +135,6 @@
                         <div class="item-cob">
                             <i class="fa-solid fa-location-dot"></i>
                             <div>
-                                <!-- Corrección de jerarquía h3 en lugar de h4 -->
                                 <h3>San Agustín Loxicha (Centro) y agencias:</h3>
                                 <p>Quelove, El Aguacate, Tobala Copalita</p>
                             </div>
@@ -138,10 +148,11 @@
                     </div>
                 </div>    
                 <div class="mapa-caja">
+                    <!-- Mapa con lazy loading explícito -->
                     <iframe 
                         title="Mapa de cobertura TecnoDany"
                         src="https://maps.google.com/maps?q=298P%2BGR,%20San%20Agust%C3%ADn%20Loxicha,%20Oaxaca&t=&z=14&ie=UTF8&iwloc=&output=embed" 
-                        width="100%" height="350" style="border:0; display: block;" allowfullscreen="" loading="lazy">
+                        width="100%" height="350" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div class="nota-legal">
                         <strong>La prestación del servicio dentro de la Cobertura del Servicio está sujeta a la factibilidad técnica y línea de vista.</strong><br>
@@ -179,7 +190,6 @@
                 </div>
                 
                 <div class="mapa" style="margin-top: 20px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                    <!-- Adición del atributo Title al iframe -->
                     <iframe 
                         title="Mapa de ubicación de la oficina TecnoDany"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.673229606883!2d-96.5540!3d15.9320!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85b88c0000000000%3A0x0000000000000000!2sSan%20Agust%C3%ADn%20Loxicha%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
@@ -243,8 +253,7 @@
     <footer class="site-footer">
         <div class="footer-grid">
             <div>
-                <!-- Dimensiones exactas de la imagen -->
-                <img src="logo.png" width="60" height="60" alt="TecnoDany" style="margin-bottom:10px;">
+                <img src="logo.png" width="60" height="60" alt="TecnoDany" style="margin-bottom:10px;" loading="lazy">
                 <p><strong>TecnoDany</strong><br>Servicio de Internet Fijo Inalámbrico.</p>
             </div>
             <div>
