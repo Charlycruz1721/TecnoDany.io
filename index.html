@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TECNO DANY ofrece servicio de internet fijo inalámbrico, rápido y estable con soporte técnico en San Agustín Loxicha y zonas aledañas.">
     <title>TecnoDany - Servicio de Internet</title>
+    
+    <!-- Optimizaciones de Rendimiento -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://maps.googleapis.com">
+    <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
+
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .legal-plan { font-size: 0.8rem; color: #666; margin-top: 15px; text-align: left; border-top: 1px solid #eee; padding-top: 10px; line-height: 1.4; }
-        .nota-legal { font-size: 0.85rem; color: #555; background-color: #f8f9fa; padding: 12px; border-left: 4px solid #0d6efd; margin-top: 15px; }
+        .nota-legal { font-size: 0.85rem; color: #555; background-color: #f8f9fa; padding: 12px; border-left: 4px solid #084298; margin-top: 15px; }
         .grid-pagos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center; margin-top: 20px; }
         .caja-pago { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border: 1px solid #eaeaea; }
-        .caja-pago i { font-size: 2.5rem; color: #0d6efd; margin-bottom: 10px; }
+        .caja-pago i { font-size: 2.5rem; color: #084298; margin-bottom: 10px; }
         .formulario-contacto { max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .form-group { margin-bottom: 15px; text-align: left; }
         .form-group label { display: block; margin-bottom: 5px; font-weight: bold; color: #333; }
         .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-family: inherit; }
-        .btn-submit { width: 100%; padding: 12px; background: #0d6efd; color: #fff; border: none; border-radius: 5px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .btn-submit { width: 100%; padding: 12px; background: #084298; color: #fff; border: none; border-radius: 5px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.3s; }
         .btn-submit:hover { background: #0b5ed7; }
         .site-footer { background: #1a1a1a; color: #fff; padding: 40px 20px 20px; text-align: center; margin-top: 40px; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; text-align: left; }
         .footer-link { color: #4da3ff; text-decoration: none; font-weight: bold; }
         .footer-link:hover { text-decoration: underline; }
         .info-contacto p { margin-bottom: 10px; font-size: 1.1rem;}
-        .info-contacto a { color: #0d6efd; text-decoration: none; font-weight: bold;}
+        /* Corrección de contraste de accesibilidad */
+        .info-contacto a { color: #084298; text-decoration: none; font-weight: bold;}
     </style>
 </head>
 <body>
@@ -43,170 +52,177 @@
         </div>
     </nav>
 
-    <header class="danu">
-        <div class="danu-content">
-            <img src="logo.png" width="250" height="250" class="logo-izquierdas" alt="Logotipo TecnoDany">
-            <h1>Servicio de Internet Residencial</h1>
-            <p>Conexión estable y soporte técnico para tu hogar o negocio.</p>
-            <a href="#planes" class="btn-main">Ver paquetes</a>
-        </div>
-    </header>
-
-    <section id="planes" class="container section">
-        <h2 class="text-center">Paquetes Disponibles</h2>
-        <p class="subtitle text-center">Capacidad y tarifas registradas de acuerdo a tus necesidades</p>
-        
-        <div class="planes-container">
-            <div class="tarjeta-plan destacado">
-                <h3>Plan Básico</h3>
-                <div class="precio">$350 <span>/ mes (IVA incluido)</span></div>
-                <div class="velocidad">3<span>Mbps</span></div>
-                <p class="desc">Para redes sociales, tareas escolares y navegación básica.</p>
-                <ul class="features">
-                    <li><i class="fa-solid fa-check text-green"></i> Soporte técnico remoto</li>
-                    <li><i class="fa-solid fa-check text-green"></i> Para 1 o 2 dispositivos</li>
-                </ul>
-                <div class="legal-plan">
-                    <p><strong>Folio de inscripción:</strong> <a href="archivos/FormatoSimplificado_2829951.pdf" target="_blank" class="btn-doc">2829951</a></p>
-                </div>
-                <a href="#contratar" class="btn-card">Contratar</a>
+    <!-- Implementación de la etiqueta MAIN para Accesibilidad -->
+    <main>
+        <header class="danu">
+            <div class="danu-content">
+                <img src="logo.png" width="250" height="250" class="logo-izquierdas" alt="Logotipo TecnoDany">
+                <h1>Servicio de Internet Residencial</h1>
+                <p>Conexión estable y soporte técnico para tu hogar o negocio.</p>
+                <a href="#planes" class="btn-main">Ver paquetes</a>
             </div>
+        </header>
 
-            <div class="tarjeta-plan">
-                <h3>Plan Familiar</h3>
-                <div class="precio">$700 <span>/ mes (IVA incluido)</span></div>
-                <div class="velocidad">6<span>Mbps</span></div>
-                <p class="desc">Capacidad optimizada para visualización de video en HD.</p>
-                <ul class="features">
-                    <li><i class="fa-solid fa-check text-green"></i> Optimizado para video</li>
-                    <li><i class="fa-solid fa-check text-green"></i> Para 3 a 4 dispositivos</li>
-                </ul>
-                <div class="legal-plan">
-                    <p><strong>Folio de inscripción:</strong> <a href="archivos/FormatoSimplificado_2829965.pdf" target="_blank" class="btn-doc">2829965</a></p>
+        <section id="planes" class="container section">
+            <h2 class="text-center">Paquetes Disponibles</h2>
+            <p class="subtitle text-center">Capacidad y tarifas registradas de acuerdo a tus necesidades</p>
+            
+            <div class="planes-container">
+                <div class="tarjeta-plan destacado">
+                    <h3>Plan Básico</h3>
+                    <div class="precio">$350 <span>/ mes (IVA incluido)</span></div>
+                    <div class="velocidad">3<span>Mbps</span></div>
+                    <p class="desc">Para redes sociales, tareas escolares y navegación básica.</p>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check text-green"></i> Soporte técnico remoto</li>
+                        <li><i class="fa-solid fa-check text-green"></i> Para 1 o 2 dispositivos</li>
+                    </ul>
+                    <div class="legal-plan">
+                        <p><strong>Folio de inscripción:</strong> <a href="archivos/FormatoSimplificado_2829951.pdf" target="_blank" class="btn-doc">2829951</a></p>
+                    </div>
+                    <a href="#contratar" class="btn-card">Contratar</a>
                 </div>
-                <a href="#contratar" class="btn-card btn-destacado">Contratar</a>
-            </div>
 
-            <div class="tarjeta-plan">
-                <h3>Plan Alto Consumo</h3>
-                <div class="precio">$1500 <span>/ mes (IVA incluido)</span></div>
-                <div class="velocidad">10 <span>Mbps</span></div>
-                <p class="desc">Diseñado para comercios locales, oficinas o el hogar exigente.</p>
-                <ul class="features">
-                    <li><i class="fa-solid fa-check text-green"></i> Videollamadas fluidas</li>
-                    <li><i class="fa-solid fa-check text-green"></i> Soporte técnico prioritario</li>
-                </ul>
-                <div class="legal-plan">
-                    <p><strong>Folio de inscripción:</strong> <a href="archivos/FormatoSimplificado_2829903.pdf" target="_blank" class="btn-doc">2829903</a></p>
+                <div class="tarjeta-plan">
+                    <h3>Plan Familiar</h3>
+                    <div class="precio">$700 <span>/ mes (IVA incluido)</span></div>
+                    <div class="velocidad">6<span>Mbps</span></div>
+                    <p class="desc">Capacidad optimizada para visualización de video en HD.</p>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check text-green"></i> Optimizado para video</li>
+                        <li><i class="fa-solid fa-check text-green"></i> Para 3 a 4 dispositivos</li>
+                    </ul>
+                    <div class="legal-plan">
+                        <p><strong>Folio de inscripción:</strong> <a href="archivos/FormatoSimplificado_2829965.pdf" target="_blank" class="btn-doc">2829965</a></p>
+                    </div>
+                    <a href="#contratar" class="btn-card btn-destacado">Contratar</a>
                 </div>
-                <a href="#contratar" class="btn-card">Contratar</a>
-            </div>
-        </div>
-    </section>
 
-    <section id="cobertura" class="bg-white section">
-        <div class="container grid-2">
-            <div>
-                <h2>Nuestra Cobertura</h2>
-                <p class="mt-1">Contamos con puntos de acceso para conectar a nuestra comunidad. Debido a la geografía de la región, la cobertura exacta se corrobora mediante un estudio de línea de vista.</p>
-                <div class="lista-cobertura mt-2">
-                    <div class="item-cob">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h4>San Agustín Loxicha (Centro) y agencias:</h4>
-                            <p>Quelove, El Aguacate, Tobala Copalita</p>
+                <div class="tarjeta-plan">
+                    <h3>Plan Alto Consumo</h3>
+                    <div class="precio">$1500 <span>/ mes (IVA incluido)</span></div>
+                    <div class="velocidad">10 <span>Mbps</span></div>
+                    <p class="desc">Diseñado para comercios locales, oficinas o el hogar exigente.</p>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check text-green"></i> Videollamadas fluidas</li>
+                        <li><i class="fa-solid fa-check text-green"></i> Soporte técnico prioritario</li>
+                    </ul>
+                    <div class="legal-plan">
+                        <p><strong>Folio de inscripción:</strong> <a href="archivos/FormatoSimplificado_2829903.pdf" target="_blank" class="btn-doc">2829903</a></p>
+                    </div>
+                    <a href="#contratar" class="btn-card">Contratar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cobertura" class="bg-white section">
+            <div class="container grid-2">
+                <div>
+                    <h2>Nuestra Cobertura</h2>
+                    <p class="mt-1">Contamos con puntos de acceso para conectar a nuestra comunidad. Debido a la geografía de la región, la cobertura exacta se corrobora mediante un estudio de línea de vista.</p>
+                    <div class="lista-cobertura mt-2">
+                        <div class="item-cob">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <!-- Corrección de jerarquía h3 en lugar de h4 -->
+                                <h3>San Agustín Loxicha (Centro) y agencias:</h3>
+                                <p>Quelove, El Aguacate, Tobala Copalita</p>
+                            </div>
+                        </div>
+                        <div class="item-cob">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>San Bartolomé Loxicha (centro):</h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="item-cob">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h4>San Bartolomé Loxicha (centro):</h4>
-                        </div>
+                </div>    
+                <div class="mapa-caja">
+                    <iframe 
+                        title="Mapa de cobertura TecnoDany"
+                        src="https://maps.google.com/maps?q=298P%2BGR,%20San%20Agust%C3%ADn%20Loxicha,%20Oaxaca&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" height="350" style="border:0; display: block;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <div class="nota-legal">
+                        <strong>La prestación del servicio dentro de la Cobertura del Servicio está sujeta a la factibilidad técnica y línea de vista.</strong><br>
                     </div>
                 </div>
-            </div>    
-            <div class="mapa-caja">
-                <iframe 
-                    src="https://maps.google.com/maps?q=298P%2BGR,%20San%20Agust%C3%ADn%20Loxicha,%20Oaxaca&t=&z=14&ie=UTF8&iwloc=&output=embed" 
-                    width="100%" height="350" style="border:0; display: block;" allowfullscreen="" loading="lazy">
-                </iframe>
-                <div class="nota-legal">
-                    <strong>La prestación del servicio dentro de la Cobertura del Servicio está sujeta a la factibilidad técnica y línea de vista.</strong><br>
+            </div>
+        </section>
+
+        <section class="container section">
+            <h2 class="text-center">Formas de Pago Aceptadas</h2>
+            <div class="grid-pagos">
+                <div class="caja-pago">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <h3>Efectivo</h3>
+                    <p>En nuestras oficinas o puntos autorizados.</p>
+                </div>
+                <div class="caja-pago">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h3>Transferencia</h3>
+                    <p>SPEI desde cualquier banco. Solicite Información vía WhatsApp.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container section">
-        <h2 class="text-center">Formas de Pago Aceptadas</h2>
-        <div class="grid-pagos">
-            <div class="caja-pago">
-                <i class="fa-solid fa-money-bill-wave"></i>
-                <h3>Efectivo</h3>
-                <p>En nuestras oficinas o puntos autorizados.</p>
+        <section id="contacto" class="bg-white section text-center">
+            <div class="container">
+                <h2>Centro de Atención a Clientes</h2>
+                <p class="mb-2">Estamos para atender tus dudas, reportes y contrataciones.</p>
+                
+                <div class="info-contacto" style="margin: 30px 0; text-align: left; background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #084298;">
+                    <p><i class="fa-solid fa-map-location-dot"></i> <strong>Ubicación de la oficina:</strong> Barrio Guadalupe Poste Número 54 (Ubicación: 298P+GR), San Agustín Loxicha, Oax., C.P. 70921</p>
+                    <p><i class="fa-solid fa-clock"></i> <strong>Horario de atención:</strong> Lunes a viernes de 12:00 a 15:00 y de 16:00 a 17:00</p>
+                    <p><i class="fa-solid fa-envelope"></i> <strong>Correo de soporte y facturación:</strong> <a href="mailto:soporte@tecnodany.com">soporte@tecnodany.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:9515760410">951 576 0410</a></p>
+                </div>
+                
+                <div class="mapa" style="margin-top: 20px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <!-- Adición del atributo Title al iframe -->
+                    <iframe 
+                        title="Mapa de ubicación de la oficina TecnoDany"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.673229606883!2d-96.5540!3d15.9320!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85b88c0000000000%3A0x0000000000000000!2sSan%20Agust%C3%ADn%20Loxicha%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; display: block;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
-            <div class="caja-pago">
-                <i class="fa-solid fa-building-columns"></i>
-                <h3>Transferencia</h3>
-                <p>SPEI desde cualquier banco. Solicite Información vía WhatsApp.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contacto" class="bg-white section text-center">
-        <div class="container">
-            <h2>Centro de Atención a Clientes</h2>
-            <p class="mb-2">Estamos para atender tus dudas, reportes y contrataciones.</p>
+        <section id="contratar" class="container section text-center">
+            <h2>Solicita tu Contratación</h2>
+            <p class="mb-2">Llena el formulario para validar tu cobertura y agendar instalación.</p>
             
-            <div class="info-contacto" style="margin: 30px 0; text-align: left; background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #0d6efd;">
-                <p><i class="fa-solid fa-map-location-dot"></i> <strong>Ubicación de la oficina:</strong> Barrio Guadalupe Poste Número 54 (Ubicación: 298P+GR), San Agustín Loxicha, Oax., C.P. 70921</p>
-                <p><i class="fa-solid fa-clock"></i> <strong>Horario de atención:</strong> Lunes a viernes de 12:00 a 15:00 y de 16:00 a 17:00</p>
-                <p><i class="fa-solid fa-envelope"></i> <strong>Correo de soporte y facturación:</strong> <a href="mailto:soporte@tecnodany.com">soporte@tecnodany.com</a></p>
-                <p><i class="fa-solid fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:9515760410">951 576 0410</a></p>
-            </div>
-            
-            <div class="mapa" style="margin-top: 20px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                <iframe 
-                    src="https://maps.google.com/maps?q=298P%2BGR,%20San%20Agust%C3%ADn%20Loxicha,%20Oaxaca&t=&z=18&ie=UTF8&iwloc=&output=embed" 
-                    width="100%" 
-                    height="400" 
-                    style="border:0; display: block;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    <section id="contratar" class="container section text-center">
-        <h2>Solicita tu Contratación</h2>
-        <p class="mb-2">Llena el formulario para validar tu cobertura y agendar instalación.</p>
-        
-        <form class="formulario-contacto" id="form-contratacion" onsubmit="enviarWhatsApp(event)">
-            <div class="form-group">
-                <label for="nombre">Nombre Completo</label>
-                <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
-            </div>
-            <div class="form-group">
-                <label for="whatsapp">Número de WhatsApp</label>
-                <input type="tel" id="whatsapp" placeholder="A 10 dígitos" required>
-            </div>
-            <div class="form-group">
-                <label for="direccion">Dirección exacta (Para validar cobertura)</label>
-                <input type="text" id="direccion" placeholder="Calle, Número, Colonia, Referencia" required>
-            </div>
-            <div class="form-group">
-                <label for="plan">Plan de Interés</label>
-                <select id="plan" required>
-                    <option value="Básico (3 Mbps)">Plan Básico (3 Mbps)</option>
-                    <option value="Familiar (6 Mbps)">Plan Familiar (6 Mbps)</option>
-                    <option value="Alto Consumo (10 Mbps)">Plan Alto Consumo (10 Mbps)</option>
-                </select>
-            </div>
-            <button type="submit" class="btn-submit"><i class="fa-brands fa-whatsapp"></i> Enviar solicitud por WhatsApp</button>
-        </form>
-    </section>
+            <form class="formulario-contacto" id="form-contratacion" onsubmit="enviarWhatsApp(event)">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">Número de WhatsApp</label>
+                    <input type="tel" id="whatsapp" placeholder="A 10 dígitos" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección exacta (Para validar cobertura)</label>
+                    <input type="text" id="direccion" placeholder="Calle, Número, Colonia, Referencia" required>
+                </div>
+                <div class="form-group">
+                    <label for="plan">Plan de Interés</label>
+                    <select id="plan" required>
+                        <option value="Básico (3 Mbps)">Plan Básico (3 Mbps)</option>
+                        <option value="Familiar (6 Mbps)">Plan Familiar (6 Mbps)</option>
+                        <option value="Alto Consumo (10 Mbps)">Plan Alto Consumo (10 Mbps)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit"><i class="fa-brands fa-whatsapp"></i> Enviar solicitud por WhatsApp</button>
+            </form>
+        </section>
+    </main>
 
     <script>
         function enviarWhatsApp(event) {
@@ -227,7 +243,8 @@
     <footer class="site-footer">
         <div class="footer-grid">
             <div>
-                <img src="logo.png" width="60" alt="TecnoDany" style="margin-bottom:10px;">
+                <!-- Dimensiones exactas de la imagen -->
+                <img src="logo.png" width="60" height="60" alt="TecnoDany" style="margin-bottom:10px;">
                 <p><strong>TecnoDany</strong><br>Servicio de Internet Fijo Inalámbrico.</p>
             </div>
             <div>
