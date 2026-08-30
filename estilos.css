@@ -43,6 +43,8 @@ body {
     background-color: #f4f6f9;
     color: #333333;
     line-height: 1.6;
+    /* Al hacer la barra 'fixed', se sale del documento. Esto compensa ese espacio */
+    padding-top: 72px; 
 }
 
 /* --- CLASES DE UTILIDAD (Estilo Humano) --- */
@@ -67,11 +69,19 @@ body {
 /* --- BARRA DE NAVEGACIÓN --- */
 .navbar {
     background-color: #1e3a8a;
-    position: sticky;
+    position: fixed; /* Cambiamos sticky por fixed para que "flote" siempre */
     top: 0;
+    left: 0;
+    width: 100%; /* Asegura que cubra de lado a lado */
     z-index: 999;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out; /* Esto hace que el "pum" sea fluido */
+}
+
+/* Esta es la clase que el código insertará para esconder la barra */
+.navbar-oculta {
+    transform: translateY(-100%);
 }
 
 .nav-container {
