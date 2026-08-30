@@ -6,7 +6,6 @@
     <meta name="description" content="TECNO DANY ofrece servicio de internet fijo inalámbrico, rápido y estable con soporte técnico en San Agustín Loxicha y zonas aledañas.">
     <title>TecnoDany - Servicio de Internet</title>
     
-    <!-- Optimizaciones de Rendimiento -->
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://maps.googleapis.com">
@@ -31,7 +30,6 @@
         .footer-link { color: #4da3ff; text-decoration: none; font-weight: bold; }
         .footer-link:hover { text-decoration: underline; }
         .info-contacto p { margin-bottom: 10px; font-size: 1.1rem;}
-        /* Corrección de contraste de accesibilidad */
         .info-contacto a { color: #084298; text-decoration: none; font-weight: bold;}
     </style>
 </head>
@@ -52,7 +50,6 @@
         </div>
     </nav>
 
-    <!-- Implementación de la etiqueta MAIN para Accesibilidad -->
     <main>
         <header class="danu">
             <div class="danu-content">
@@ -124,7 +121,6 @@
                         <div class="item-cob">
                             <i class="fa-solid fa-location-dot"></i>
                             <div>
-                                <!-- Corrección de jerarquía h3 en lugar de h4 -->
                                 <h3>San Agustín Loxicha (Centro) y agencias:</h3>
                                 <p>Quelove, El Aguacate, Tobala Copalita</p>
                             </div>
@@ -179,7 +175,6 @@
                 </div>
                 
                 <div class="mapa" style="margin-top: 20px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                    <!-- Adición del atributo Title al iframe -->
                     <iframe 
                         title="Mapa de ubicación de la oficina TecnoDany"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.673229606883!2d-96.5540!3d15.9320!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85b88c0000000000%3A0x0000000000000000!2sSan%20Agust%C3%ADn%20Loxicha%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
@@ -238,30 +233,24 @@
             const url = `https://wa.me/529515760410?text=${mensajeCodificado}`;
             window.open(url, '_blank');
         }
-    // ... aquí termina tu función de WhatsApp ...
-
-        // Código para el efecto "Smart Navbar"
+    
         let ultimoScroll = window.scrollY;
         const navbar = document.querySelector('.navbar');
 
         window.addEventListener('scroll', () => {
             let scrollActual = window.scrollY;
 
-            // Si estamos hasta arriba de la página, siempre la mostramos
             if (scrollActual <= 0) {
                 navbar.classList.remove('navbar-oculta');
                 return;
             }
 
-            // Si damos el "jalón" hacia arriba (el número de scroll disminuye)
             if (scrollActual < ultimoScroll) {
                 navbar.classList.remove('navbar-oculta'); 
             } else {
-                // Si deslizamos hacia abajo leyendo los planes, la escondemos
                 navbar.classList.add('navbar-oculta');
             }
             
-            // Actualizamos la posición para el siguiente movimiento
             ultimoScroll = scrollActual;
         });
     </script>
@@ -269,7 +258,6 @@
     <footer class="site-footer">
         <div class="footer-grid">
             <div>
-                <!-- Dimensiones exactas de la imagen -->
                 <img src="logo.png" width="60" height="60" alt="TecnoDany" style="margin-bottom:10px;">
                 <p><strong>TecnoDany</strong><br>Servicio de Internet Fijo Inalámbrico.</p>
             </div>
